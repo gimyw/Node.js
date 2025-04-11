@@ -6,5 +6,5 @@ export const options = {
 };
 
 export default function () {
-  http.get("http://localhost:8000");
+  http.get("http://localhost:8000");  //포트번호 8000
 }
