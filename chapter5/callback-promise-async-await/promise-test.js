@@ -2,7 +2,7 @@ const DB = [];
 
 function saveDB(user) {
   // 실패 테스트시 다음의 주석 해제 
-  const oldDBSize = DB.length;
+  const oldDBSize = DB.length +1;
   // const oldDBSize = DB.length;
 
   DB.push(user);
