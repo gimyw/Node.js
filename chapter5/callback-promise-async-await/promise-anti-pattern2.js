@@ -15,6 +15,7 @@ function playGame(work) {
     })
 }
 
+// 1. 프로미스를 중첩해서 사용
 myWork('done')
     .then(function (result) {
         playGame(result).then(function (val) {
@@ -22,6 +23,7 @@ myWork('done')
         });
     })
 
+// 2. 결과를 then으로 넘김
 myWork('done')
 .then(playGame)
 .then(console.log)
